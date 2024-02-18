@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3A6B35;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banking_system_fx.Menu_Admin_Controller">
+   <children>
+      <Button fx:id="deposit" layoutX="88.0" layoutY="115.0" mnemonicParsing="false" onAction="#choose_deposit" style="-fx-background-color: #E3B448;" text="Deposit">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Button>
+      <Button fx:id="withdraw" layoutX="437.0" layoutY="115.0" mnemonicParsing="false" onAction="#choose_withdraw" style="-fx-background-color: #E3B448;" text="Withdraw">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Button>
+      <Button fx:id="balance_users" layoutX="418.0" layoutY="210.0" mnemonicParsing="false" onAction="#choose_balance_users" style="-fx-background-color: #E3B448;" text="All users balance">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Button>
+      <TitledPane fx:id="balance" animated="false" layoutX="16.0" layoutY="210.0" style="-fx-background-color: #E3B448;" text="Balance">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #E3B448;" />
+        </content>
+      </TitledPane>
+      <Text fill="#cbd18f" layoutX="212.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="Choose action">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="27.0" layoutY="31.0" mnemonicParsing="false" onAction="#go_back" style="-fx-background-color: #CBD18F;" text="&lt;--" />
+   </children>
+</AnchorPane>

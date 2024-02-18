@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3A6B35;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banking_system_fx.Sign_Up_Controller">
+   <children>
+      <TextField fx:id="user_field" layoutX="33.0" layoutY="66.0" style="-fx-background-color: #E3B448;">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="name_field" layoutX="33.0" layoutY="209.0" style="-fx-background-color: #E3B448;">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="cnp_field" layoutX="33.0" layoutY="275.0" style="-fx-background-color: #E3B448;">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="age_field" layoutX="326.0" layoutY="66.0" style="-fx-background-color: #E3B448;">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></TextField>
+      <PasswordField fx:id="pass_field" layoutX="33.0" layoutY="140.0" style="-fx-background-color: #E3B448;">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></PasswordField>
+      <Button fx:id="sign_up" layoutX="351.0" layoutY="275.0" mnemonicParsing="false" onAction="#final_signup" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: #E3B448;" text="SIGN UP">
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font></Button>
+      <Text fill="#cbd18f" layoutX="33.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="Username">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <Text fill="#cbd18f" layoutX="33.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="Password">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <Text fill="#cbd18f" layoutX="33.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="Name">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <Text fill="#cbd18f" layoutX="37.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="CNP">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <Text fill="#cbd18f" layoutX="326.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="Age">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <Text fill="#cbd18f" layoutX="325.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="Gender">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <Text fill="#cbd18f" layoutX="325.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #E3B448;" text="User/Admin">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Text>
+      <MenuButton layoutX="326.0" layoutY="140.0" mnemonicParsing="false" style="-fx-background-color: #E3B448;" text="Choose your gender">
+        <items>
+            <RadioMenuItem fx:id="gender_fem" mnemonicParsing="false" text="feminin">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem fx:id="gender_mas" mnemonicParsing="false" text="masculin" toggleGroup="$gender" />
+        </items>
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </MenuButton>
+       <MenuButton layoutX="326.0" layoutY="209.0" mnemonicParsing="false" style="-fx-background-color: #E3B448;" text="Role">
+           <items>
+               <RadioMenuItem fx:id="role_user" mnemonicParsing="false" text="user">
+                   <toggleGroup>
+                       <ToggleGroup fx:id="role" />
+                   </toggleGroup>
+               </RadioMenuItem>
+               <RadioMenuItem fx:id="role_admin" mnemonicParsing="false" text="admin" toggleGroup="$role" />
+           </items>
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+       </MenuButton>
+   </children>
+</AnchorPane>
